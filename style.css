@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #303952, #c2e59c);
+}
+#contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 95%;
+    background-color: #303952;
+    border-radius: 10px;
+    z-index: 9999;
+    color: white;
+    text-align: center; 
+}
+
+#contenido h2{
+    position: relative; 
+    top: 4%; 
+    left: 12%;
+    width: 80%;
+    color: #c2e59c;
+}
+#contenido img{
+  position: absolute; 
+  left: 30%;
+  width: 40%;
+  bottom: calc(100% - 600px);
+}
+
+#mandamiento {
+    width: 350px;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; 
+}
+#mandamiento button {
+    position: relative;
+    background: #2f5803;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+  #mandamiento button:active {
+    transform: scale(1.2); /* Escalamos el botón en un 20% */
+  }
+
+#mandamiento:nth-child(n+1) {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 268px) {
+    #mandamiento {
+      width: calc(50% - 10px);
+    }
+  
+    #mandamiento:nth-child(-n+5) {
+      margin-right: 0px;
+    }
+  
+    #mandamiento:nth-child(5) {
+      margin-right: 0;
+    }
+}
+
+  
